@@ -3,12 +3,19 @@
 We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
-  {{#each model as |rental|}}
+  {{#each model.rentals as |rental|}}
      {{rental-tile rental=rental destroyRental="destroyRental"}}
   {{/each}}
 </ul>
 
+<ul>
+  {{#each model.messages as |message|}}
+    {{message-tile message=message}}
+  {{/each}}
+</ul>
+
 {{new-rental saveRental2="saveRental3"}}
+{{new-message saveMessage="saveMessage"}}
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}
