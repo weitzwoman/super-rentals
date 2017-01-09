@@ -10,7 +10,7 @@ We hope you find exactly what you're looking for in a place to stay.
 
 <ul>
   {{#each model.messages as |message|}}
-    {{message-tile message=message}}
+    {{message-tile message=message destroyMessage="destroyMessage"}}
   {{/each}}
 </ul>
 
