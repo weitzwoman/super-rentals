@@ -14,7 +14,14 @@ module.exports = function(environment) {
       EXTEND_PROTOTYPES: {
         // Prevent Ember Data from overriding Date.parse.
         Date: false
-      }
+      },
+    },
+
+    firebase: {
+      apiKey: "AIzaSyCWjpgNz1w3rMnuDoUtqWmXFfP6mVCcNDk",
+      authDomain: "super-rentals-c2ad0.firebaseapp.com",
+      databaseURL: "https://super-rentals-c2ad0.firebaseio.com",
+      storageBucket: "super-rentals-c2ad0.appspot.com"
     },
 
     APP: {
