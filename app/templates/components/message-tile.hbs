@@ -1,6 +1,7 @@
 {{#if showMessages}}
   <li>
     {{message.message}}
+    <button {{action 'messageHide'}}>Hide</button>
     <button {{action 'delete' message}}>Delete Message</button>
   </li>
 {{else}}

@@ -10,6 +10,9 @@ export default Ember.Component.extend({
     },
     messageShow: function() {
       this.set('showMessages', true);
+    },
+    messageHide: function() {
+      this.set('showMessages', false);
     }
   }
 });
