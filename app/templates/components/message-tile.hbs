@@ -1,4 +1,8 @@
-<li>
-  {{message.message}}
-  <button {{action 'delete' message}}>Delete Message</button>
-</li>
+{{#if showMessages}}
+  <li>
+    {{message.message}}
+    <button {{action 'delete' message}}>Delete Message</button>
+  </li>
+{{else}}
+  <button {{action 'messageShow'}}>Show messages</button>
+{{/if}}
